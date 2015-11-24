@@ -6,10 +6,24 @@
 //  Copyright © 2015年 xx. All rights reserved.
 //
 
+#include <opencv2/opencv.hpp>
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace cv;
+using namespace std;
+
+int main()
+{
+    VideoCapture cap(0);
+    if(!cap.isOpened()){
+        return -1;
+    }
+    Mat frame;
+    
+    while(true){
+        cap>>frame;
+        imshow("当前视频", frame);
+        if(waitKey(30) >= 0) break;
+    }
     return 0;
 }

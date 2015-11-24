@@ -207,6 +207,18 @@
 		1D1003FA1C01D86B00614F67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_core",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+					"-lopencv_video",
+					"-lopencv_contrib",
+					"-lopencv_legacy",
+					"-lopencv_flann",
+					"-lopencv_features2d",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -214,6 +226,18 @@
 		1D1003FB1C01D86B00614F67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_core",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+					"-lopencv_video",
+					"-lopencv_contrib",
+					"-lopencv_legacy",
+					"-lopencv_flann",
+					"-lopencv_features2d",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
